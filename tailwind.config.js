@@ -1,0 +1,30 @@
+export default {
+  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        bg: "rgb(var(--color-bg) / <alpha-value>)",
+        surface: "rgb(var(--color-surface) / <alpha-value>)",
+        surface2: "rgb(var(--color-surface-2) / <alpha-value>)",
+        borderc: "rgb(var(--color-border) / <alpha-value>)",
+
+        text: "rgb(var(--color-text) / <alpha-value>)",
+        text2: "rgb(var(--color-text-2) / <alpha-value>)",
+        text3: "rgb(var(--color-text-3) / <alpha-value>)",
+
+        primary: "rgb(var(--color-primary) / <alpha-value>)",
+        primaryHover: "rgb(var(--color-primary-hover) / <alpha-value>)",
+
+        success: "rgb(var(--color-success) / <alpha-value>)",
+        warning: "rgb(var(--color-warning) / <alpha-value>)",
+        error: "rgb(var(--color-error) / <alpha-value>)",
+        info: "rgb(var(--color-info) / <alpha-value>)",
+      },
+      borderRadius: {
+        xl2: "14px",
+      },
+    },
+  },
+  plugins: [],
+};
