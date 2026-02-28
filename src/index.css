@@ -1,6 +1,26 @@
 @import "tailwindcss";
 @config "../tailwind.config.js";
 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 :root {
   --color-bg: 248 250 252;
   --color-surface: 255 255 255;
