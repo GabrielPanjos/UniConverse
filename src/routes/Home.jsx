@@ -1,4 +1,4 @@
-import MainTemplate from "../templates/MainTemplate/index.jsx";
+import MainTemplate from "../templates/MainTemplate";
 
 export default function Home() {
   return (

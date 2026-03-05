@@ -2,7 +2,7 @@
 @config "../tailwind.config.js";
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 body {
@@ -15,6 +15,11 @@ html,
 body {
   height: 100%;
   width: 100%;
+}
+
+body {
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 button:hover {
