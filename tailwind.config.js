@@ -22,7 +22,7 @@ export default {
         info: "rgb(var(--color-info) / <alpha-value>)",
       },
       borderRadius: {
-        xl2: "14px",
+        xl2: "6px",
       },
     },
   },

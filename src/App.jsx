@@ -1,5 +1,4 @@
-import Conversor from "./routes/Conversor";
-import Home from "./routes/Home";
+import routes from "./data/routes";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -7,8 +6,13 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/conversor" element={<Conversor />}></Route>
+          {routes.map((route) => (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={<route.element />}
+            />
+          ))}
         </Routes>
       </BrowserRouter>
     </>

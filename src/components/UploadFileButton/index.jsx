@@ -11,7 +11,7 @@ export default function UploadFileButton() {
   return (
     <>
       <button
-        className="border-2 border-primary transition-colors duration-200 hover:border-primaryHover hover:bg-primaryHover text-text2 hover:text-bg text-[14px] rounded-md shadow-gray-500 h-10 w-36 font-semibold"
+        className="border-2 border-primary transition-colors duration-200 hover:border-primaryHover hover:bg-primaryHover text-text2 hover:text-bg text-[14px] rounded-xl2 shadow-gray-500 h-10 w-36 font-semibold"
         onClick={uploadFile}
       >
         Escolher arquivo

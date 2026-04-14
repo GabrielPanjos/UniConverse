@@ -1,9 +1,9 @@
 import MainTemplate from "../templates/MainTemplate";
 
-export default function Home() {
+export default function Contact() {
   return (
     <MainTemplate>
-      <section className="w-full h-full bg-bg"></section>
+      <section>Contact</section>
     </MainTemplate>
   );
 }
