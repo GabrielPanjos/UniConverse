@@ -12,6 +12,7 @@ export default function Footer() {
         <ul className="flex gap-6">
           {footerRoutes.map((option) => (
             <NavItem
+              key={option.path}
               to={option.path}
               className={
                 "text-text2 text-sm hover:text-primaryHover font-medium"

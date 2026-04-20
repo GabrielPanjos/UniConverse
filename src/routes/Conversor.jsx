@@ -9,7 +9,7 @@ export default function Conversor() {
         <PageHeader title={"Uniconverse - Converter vídeo em áudio"}>
           Converta vídeos em áudio de alta qualidade gratuitamente
         </PageHeader>
-        <UploadFileButton />
+        <UploadFileButton>Escolher Arquivo</UploadFileButton>
       </section>
     </MainTemplate>
   );
