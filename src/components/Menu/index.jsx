@@ -6,6 +6,7 @@ export default function Menu() {
     <nav className="flex gap-15 justify-end">
       {headerRoutes.map((option) => (
         <NavItem
+          key={option.path}
           to={option.path}
           className={
             "text-text2 hover:text-primaryHover text-[20px] font-semibold "
