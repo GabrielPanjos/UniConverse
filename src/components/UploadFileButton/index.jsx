@@ -2,7 +2,7 @@ import { useRef, useContext } from "react";
 import { FileContext } from "../../context/FileContext";
 import { useNavigate } from "react-router-dom";
 
-export default function UploadFileButton({ children }) {
+export default function UploadFileButton({ children, setLoading }) {
   const { setFilename } = useContext(FileContext);
   const navigate = useNavigate();
 
@@ -16,6 +16,8 @@ export default function UploadFileButton({ children }) {
   const handleFileChange = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
+
+    setLoading(true);
 
     const formData = new FormData();
     formData.append("file", file);
