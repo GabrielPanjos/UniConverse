@@ -37,14 +37,6 @@ export default function Login() {
 
     setLoading(true);
     try {
-      // TODO: integrar com a API de autenticação
-      // const res = await fetch("http://localhost:5000/login", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(form),
-      // });
-      // if (!res.ok) throw new Error();
-
       navigate("/");
     } catch {
       setErrors({ form: "Não foi possível entrar. Tente novamente." });
@@ -55,7 +47,7 @@ export default function Login() {
 
   return (
     <MainTemplate>
-      <section className="w-full h-full bg-bg flex flex-col justify-center items-center py-10">
+      <section className="w-full h-full flex flex-col justify-center items-center py-10">
         <PageHeader title="Bem-vindo de volta">
           Entre com sua conta para continuar convertendo
         </PageHeader>

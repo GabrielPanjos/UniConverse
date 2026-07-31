@@ -49,14 +49,6 @@ export default function Register() {
 
     setLoading(true);
     try {
-      // TODO: integrar com a API de autenticação
-      // const res = await fetch("http://localhost:5000/register", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(form),
-      // });
-      // if (!res.ok) throw new Error();
-
       navigate("/login");
     } catch {
       setErrors({ form: "Não foi possível criar sua conta. Tente novamente." });
@@ -67,7 +59,7 @@ export default function Register() {
 
   return (
     <MainTemplate>
-      <section className="w-full h-full bg-bg flex flex-col justify-center items-center py-10">
+      <section className="w-full h-full flex flex-col justify-center items-center py-10">
         <PageHeader title="Crie sua conta">
           Comece a converter seus vídeos em áudio gratuitamente
         </PageHeader>
