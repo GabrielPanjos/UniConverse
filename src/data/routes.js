@@ -7,6 +7,8 @@ import Contact from "../routes/Contact";
 import Privacy from "../routes/Privacy";
 import Terms from "../routes/Terms";
 import Download from "../routes/Download";
+import Login from "../routes/Login";
+import Register from "../routes/Register";
 
 const routes = [
   new AppRoute("Home", "/", Home),
@@ -16,6 +18,8 @@ const routes = [
   new AppRoute("Privacy Policy", "/privacy", Privacy),
   new AppRoute("Terms of Service", "/terms", Terms),
   new AppRoute("Download", "/download", Download),
+  new AppRoute("Login", "/login", Login),
+  new AppRoute("Register", "/register", Register),
 ];
 
 export default routes;

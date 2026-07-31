@@ -9,7 +9,7 @@ export default function Menu() {
           key={option.path}
           to={option.path}
           className={
-            "text-text2 hover:text-primaryHover text-[20px] font-semibold "
+            "text-text2 hover:text-primaryHover text-[20px] font-semibold"
           }
         >
           {option.name}
